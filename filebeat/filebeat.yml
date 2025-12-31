@@ -1,0 +1,16 @@
+filebeat.inputs:
+  - type: log
+    id: email_gateway_logs
+    paths:
+      - /data/email_logs.log
+    scan_frequency: 5s
+    encoding: utf-8
+    exclude_lines: ['^\s*$']
+    fields:
+      log_type: email_gateway
+    fields_under_root: true
+
+output.logstash:
+  hosts: ["logstash:5044"]
+
+logging.level: info

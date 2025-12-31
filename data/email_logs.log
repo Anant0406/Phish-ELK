@@ -1,0 +1,11 @@
+2025-12-31T11:04:52Z src_ip=203.0.113.10 sender=alice@example.com recipient=you@company.local subject="Invoice #12345" urls=["http://example-payments.com/pay","http://bit.ly/xyz"] attachments=["invoice.pdf"] verdict=delivered
+2025-12-31T11:06:17Z src_ip=198.51.100.22 sender=support@micros0ft.com recipient=you@company.local subject="Password Reset" urls=["http://secure-login.co/reset"] attachments=["reset.html"] verdict=delivered
+2025-12-31T11:09:43Z src_ip=192.0.2.44 sender=billing@trustedbank.com recipient=you@company.local subject="Statement" urls=[] attachments=["statement.zip"] verdict=quarantined
+2025-12-31T11:12:00Z src_ip=203.0.113.55 sender=admin@secure-login.co recipient=you@company.local subject="Security Alert" urls=["http://secure-login.co/verify"] attachments=["alert.html"] verdict=delivered
+2025-12-31T11:12:00Z src_ip=203.0.113.55 sender=admin@secure-login.co recipient=you@company.local subject="Security Alert" urls=["http://secure-login.co/verify"] attachments=["alert.html"] verdict=delivered
+2025-12-31T11:12:00Z src_ip=203.0.113.55 sender=admin@secure-login.co recipient=you@company.local subject="Security Alert" urls=["http://secure-login.co/verify"] attachments=["alert.html"] verdict=delivered
+2025-12-31T11:45:00Z src_ip=203.0.113.77 sender=alerts@phishy.biz recipient=you@company.local subject="Urgent Action Required" urls=["http://phishy.biz/urgent"] attachments=["urgent.exe"] verdict=delivered
+2025-12-31T11:50:00Z src_ip=203.0.113.88 sender=alerts@phishy.biz recipient=you@company.local subject="Account Suspended" urls=["http://phishy.biz/suspend"] attachments=["suspend.pdf"] verdict=delivered
+2025-12-31T12:50:00Z src_ip=203.0.113.99 sender=alerts@phishy.biz recipient=you@company.local subject="Verify Now" urls=["http://phishy.biz/verify"] attachments=["verify.exe"] verdict=delivered' >> /data/email_logs.log
+2025-12-31T12:55:00Z src_ip=203.0.113.77 sender=security@phishy.biz recipient=you@company.local subject="Critical Alert" urls=["http://phishy.biz/alert"] attachments=["alert.docx"] verdict=quarantined
+2025-12-31T12:56:00Z src_ip=198.51.100.45 sender=updates@trustedbank.com recipient=you@company.local subject="Monthly Statement" urls=[] attachments=["statement.pdf"] verdict=delivered
